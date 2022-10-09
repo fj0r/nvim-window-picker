@@ -196,7 +196,6 @@ function M.pick_window(custom_config)
     end
 
     v.cmd('redraw')
-    print('Pick window: ')
     local _, resp = pcall(util.get_user_input_char)
     resp = (resp or ''):upper()
     util.clear_prompt()
